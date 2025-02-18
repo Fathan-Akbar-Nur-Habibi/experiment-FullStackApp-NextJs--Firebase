@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.form-wrapper {
+	background: #fff;
+	padding: 40px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 15px;
+}
+
+label p {
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.input-field {
+	padding: 12px 16px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 5px;
+	width: 100%;
+	background-color: #f9f9f9;
+	transition: border-color 0.3s;
+}
+
+.input-field:focus {
+	border-color: #4caf50;
+	outline: none;
+}
+
+.submit-btn {
+	padding: 12px;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+	background-color: #45a049;
+}
+
+.submit-btn:active {
+	background-color: #388e3c;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+	.wrapper {
+		padding: 10px;
+	}
+
+	.form-wrapper {
+		padding: 20px;
+		max-width: 90%;
+	}
+
+	.title {
+		font-size: 1.2rem;
+	}
+
+	.input-field {
+		font-size: 0.9rem;
+	}
+
+	.submit-btn {
+		font-size: 0.9rem;
+	}
+}
+/* Tambahkan desain tombol Sign Out */
+.signout-btn {
+	padding: 12px;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #d32f2f;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: background-color 0.3s;
+}
+
+.signout-btn:hover {
+	background-color: #c62828;
+}
+
+.signout-btn:active {
+	background-color: #b71c1c;
+}
+/* Form Styling */
+.form-wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.error-popup {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
